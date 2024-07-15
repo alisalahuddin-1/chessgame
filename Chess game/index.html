@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <!-- <TABLE class="chessboard" border=1px >
+        <TR>
+          <TD class="white" id=cell00 onClick="selectCell(0,0);">&#9823;	</TD>
+          <TD class="white" id=cell00 onClick="selectCell(0,0);">&#9814;	</TD>
+          <TD class="white" id=cell00 onClick="selectCell(0,0);">&#9816;	</TD>
+          <TD class="white" id=cell00 onClick="selectCell(0,0);">&#9819;	</TD>
+          <TD class="black" id=cell01 onClick="selectCell(0,1);">&#9821;	</TD>
+          <TD class="black" id=cell01 onClick="selectCell(0,1);">&#9812;	</TD>
+          <TD class="black" id=cell01 onClick="selectCell(0,1);">&#9825;	</TD>
+          <TD class="black" id=cell01 onClick="selectCell(0,1);">&#9822;	</TD>
+        </TR>
+        
+        <TR>
+            <TD class="white" id=cell00 onClick="selectCell(0,0);">&#9823;	</TD>
+            <TD class="white" id=cell00 onClick="selectCell(0,0);">&#9814;	</TD>
+            <TD class="white" id=cell00 onClick="selectCell(0,0);">&#9816;	</TD>
+            <TD class="white" id=cell00 onClick="selectCell(0,0);">&#9819;	</TD>
+            <TD class="black" id=cell01 onClick="selectCell(0,1);">&#9821;	</TD>
+            <TD class="black" id=cell01 onClick="selectCell(0,1);">&#9812;	</TD>
+            <TD class="black" id=cell01 onClick="selectCell(0,1);">&#9813;	</TD>
+            <TD class="black" id=cell01 onClick="selectCell(0,1);">&#9819;	</TD>
+          </TR>
+          <TR>
+            <TD bgcolor=""  class="white" id=cell00 onClick="selectCell(0,0);">&#9823;	</TD>
+            <TD bgcolor="black" class="white" id=cell00 onClick="selectCell(0,0);">&#9814;	</TD>
+            <TD bgcolor="" class="white" id=cell00 onClick="selectCell(0,0);">&#9814;	</TD>
+            <TD bgcolor="black" class="white" id=cell00 onClick="selectCell(0,0);">&#9814;	</TD>
+            <TD bgcolor="" class="black" id=cell01 onClick="selectCell(0,1);">&#9816;	</TD>
+            <TD bgcolor="black" class="black" id=cell01 onClick="selectCell(0,1);">&#9816;	</TD>
+            <TD bgcolor="" class="black" id=cell01 onClick="selectCell(0,1);">&#9816;	</TD>
+            <TD bgcolor="black" class="black" id=cell01 onClick="selectCell(0,1);">&#9816;	</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="black" class="white" id=cell00 onClick="selectCell(0,0);">&#9823;	</TD>
+            <TD bgcolor="" class="white" id=cell00 onClick="selectCell(0,0);">&#9814;	</TD>
+            <TD bgcolor="black" class="white" id=cell00 onClick="selectCell(0,0);">&#9814;	</TD>
+            <TD bgcolor="" class="white" id=cell00 onClick="selectCell(0,0);">&#9814;	</TD>
+            <TD bgcolor="black" class="black" id=cell01 onClick="selectCell(0,1);">&#9816;	</TD>
+            <TD bgcolor="" class="black" id=cell01 onClick="selectCell(0,1);">&#9816;	</TD>
+            <TD bgcolor="black" class="black" id=cell01 onClick="selectCell(0,1);">&#9816;	</TD>
+            <TD bgcolor="" class="black" id=cell01 onClick="selectCell(0,1);">&#9816;	</TD>
+          </TR>
+          <TR>
+            <TD bgcolor=""  class="white" id=cell00 onClick="selectCell(0,0);">&#9823;	</TD>
+            <TD bgcolor="black" class="white" id=cell00 onClick="selectCell(0,0);">&#9814;	</TD>
+            <TD bgcolor="" class="white" id=cell00 onClick="selectCell(0,0);">&#9814;	</TD>
+            <TD bgcolor="black" class="white" id=cell00 onClick="selectCell(0,0);">&#9814;	</TD>
+            <TD bgcolor="" class="black" id=cell01 onClick="selectCell(0,1);">&#9816;	</TD>
+            <TD bgcolor="black" class="black" id=cell01 onClick="selectCell(0,1);">&#9816;	</TD>
+            <TD bgcolor="" class="black" id=cell01 onClick="selectCell(0,1);">&#9816;	</TD>
+            <TD bgcolor="black" class="black" id=cell01 onClick="selectCell(0,1);">&#9816;	</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="black" class="white" id=cell00 onClick="selectCell(0,0);">&#9823;	</TD>
+            <TD bgcolor="" class="white" id=cell00 onClick="selectCell(0,0);">&#9814;	</TD>
+            <TD bgcolor="black" class="white" id=cell00 onClick="selectCell(0,0);">&#9814;	</TD>
+            <TD bgcolor="" class="white" id=cell00 onClick="selectCell(0,0);">&#9814;	</TD>
+            <TD bgcolor="black" class="black" id=cell01 onClick="selectCell(0,1);">&#9816;	</TD>
+            <TD bgcolor="" class="black" id=cell01 onClick="selectCell(0,1);">&#9816;	</TD>
+            <TD bgcolor="black" class="black" id=cell01 onClick="selectCell(0,1);">&#9816;	</TD>
+            <TD bgcolor="" class="black" id=cell01 onClick="selectCell(0,1);">&#9816;	</TD>
+          </TR>
+          <TR>
+            <TD  class="white" id=cell00 onClick="selectCell(0,0);">&#9812;	</TD>
+            <TD  class="white" id=cell00 onClick="selectCell(0,0);">&#9814;	</TD>
+            <TD  class="white" id=cell00 onClick="selectCell(0,0);">&#9816;	</TD>
+            <TD  class="white" id=cell00 onClick="selectCell(0,0);">&#9818;	</TD>
+            <TD  class="black" id=cell01 onClick="selectCell(0,1);">&#9820;	</TD>
+            <TD  class="black" id=cell01 onClick="selectCell(0,1);">&#9822;	</TD>
+            <TD  class="black" id=cell01 onClick="selectCell(0,1);">&#9823;	</TD>
+            <TD  class="black" id=cell01 onClick="selectCell(0,1);">&#9819;	</TD>
+          </TR>
+          <TR>
+            <TD class="white" id=cell00 onClick="selectCell(0,0);">&#9823;	</TD>
+            <TD class="white" id=cell00 onClick="selectCell(0,0);">&#9814;	</TD>
+            <TD class="white" id=cell00 onClick="selectCell(0,0);">&#9816;	</TD>
+            <TD class="white" id=cell00 onClick="selectCell(0,0);">&#9819;	</TD>
+            <TD class="black" id=cell01 onClick="selectCell(0,1);">&#9821;	</TD>
+            <TD class="black" id=cell01 onClick="selectCell(0,1);">&#9812;	</TD>
+            <TD class="black" id=cell01 onClick="selectCell(0,1);">&#9813;	</TD>
+            <TD class="black" id=cell01 onClick="selectCell(0,1);">&#9819;	</TD>
+          </TR>
+                      
+      </TABLE> -->
+
+
+      <h1>static chess bored</h1>
+<table border="1px" class="chessboard">
+    <tr>
+        <td bgcolor="white"></td>
+        <td bgcolor="black"></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="black"></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="black"></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="black"></td>
+    </tr>
+    <tr>
+        <td bgcolor="black"></td>
+        <td bgcolor=""></td>
+        <td bgcolor="black"></td>
+        <td bgcolor=""></td>
+        <td bgcolor="black"></td>
+        <td bgcolor=""></td>
+        <td bgcolor="black"></td>
+        <td bgcolor=""></td>
+    </tr>
+    <tr>
+        <td bgcolor=""></td>
+        <td bgcolor="black"></td>
+        <td bgcolor=""></td>
+        <td bgcolor="black"></td>
+        <td bgcolor=""></td>
+        <td bgcolor="black"></td>
+        <td bgcolor=""></td>
+        <td bgcolor="black"></td>
+    </tr>
+    <tr>
+        <td bgcolor="black"> </td>
+        <td bgcolor=""> </td>
+        <td bgcolor="black"> </td>
+        <td bgcolor=""> </td>
+        <td bgcolor="black"> </td>
+        <td bgcolor=""> </td>
+        <td bgcolor="black"> </td>
+        <td bgcolor=""> </td>
+    </tr>
+    <tr>
+        <td bgcolor=""></td>
+        <td bgcolor="black"></td>
+        <td bgcolor=""></td>
+        <td bgcolor="black"></td>
+        <td bgcolor=""></td>
+        <td bgcolor="black"></td>
+        <td bgcolor=""></td>
+        <td bgcolor="black"></td>
+    </tr>
+    <tr>
+        <td bgcolor="black"></td>
+        <td bgcolor=""></td>
+        <td bgcolor="black"></td>
+        <td bgcolor=""></td>
+        <td bgcolor="black"></td>
+        <td bgcolor=""></td>
+        <td bgcolor="black"></td>
+        <td bgcolor=""></td>
+    </tr>
+    <tr>
+        <td bgcolor=""></td>
+        <td bgcolor="black"></td>
+        <td bgcolor=""></td>
+        <td bgcolor="black"></td>
+        <td bgcolor=""></td>
+        <td bgcolor="black"></td>
+        <td bgcolor=""></td>
+        <td bgcolor="black"></td>
+    </tr>
+    <tr>
+        <td bgcolor="black"></td>
+        <td bgcolor=""></td>
+        <td bgcolor="black"></td>
+        <td bgcolor=""></td>
+        <td bgcolor="black"></td>
+        <td bgcolor=""></td>
+        <td bgcolor="black"></td>
+        <td bgcolor=""></td>
+    </tr>
+
+</table>
+    
+</body>
+</html>
